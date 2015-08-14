@@ -1,5 +1,3 @@
-var $ = require('jquery');
-
 $(document).on('click', '[data-js=selectAll]', e => {
     $('[name=selected]').prop('checked', e.target.checked);
     $('[name=selected]').trigger('change');
