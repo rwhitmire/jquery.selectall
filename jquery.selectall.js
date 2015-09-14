@@ -28,3 +28,7 @@ $(document).on('click', '[data-js=selectAll]', e => {
 $(document).on('click', '[name=selected]', e => {
     setSelectAll();
 });
+
+$(document).on('selectall:update', () => {
+    setSelectAll();
+});
